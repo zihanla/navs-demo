@@ -1,0 +1,57 @@
+        /* 清除浏览器默认样式 全局样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-decoration: none;
+            box-sizing: border-box;
+            font-family: LXGW WenKai;
+            background-color: #F2F2F2;
+        }
+
+
+        /* 主容器整体布局 */
+        .container {
+            width: 1200px;
+            padding: 30px 10px 30px;
+            margin: 0 163px;
+
+        }
+
+        /* 头部 */
+        .container .header {
+            width: 1180px;
+            height: 50px;
+            margin-bottom: 25px;
+        }
+
+        /* navs布局 */
+        .container .navs {
+            display: flex;
+            justify-content: space-between;
+            padding: 0 5px;
+
+        }
+
+        /* 分类名span */
+        .container .navs .cate {
+            display: block;
+            margin-bottom: 6px;
+            font-size: large;
+        }
+
+        /* 设置链接列表样式 */
+        .container .navs ul li {
+            display: block;
+            height: 45px;
+            line-height: 45px;
+        }
+
+        .container .navs ul li a {
+            transition: transform 0.3s ease;
+        }
+
+        .container .navs ul li a:hover {
+            color: #000;
+            font-size: larger;
+        }

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./static/index.css">
+    <link rel="stylesheet" href="https://npm.elemecdn.com/lxgw-wenkai-webfont@1.6.0/lxgwwenkai-bold.css">
+
+    <title>闲人导航</title>
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <div class="header">
+                <h1>闲人导航</h1>
+                <span style="display: block;font-size: 1.1em;font-weight: 600;margin-top: 3px;">有棱角，有温度</span>
+            </div>
+            <!-- 分割线 -->
+            <div style="border-top:2px solid #000; margin-bottom: 30px;"></div>
+            <div class="navs">
+                <div class="films">
+                    <span class="cate">影视</span>
+                    <ul>
+                        <li v-for="item in films"><a :href="item.url" :title="item.mark"
+                                target="_blank">{{item.title}}</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fontEnd">
+                    <span class="cate">前端</span>
+                    <ul>
+                        <li v-for="item in fontEnd"><a :href="item.url" :title="item.mark" target="
+                                    _blank">{{item.title}}</a></li>
+                    </ul>
+                </div>
+                <div class="backEnd">
+                    <span class="cate">后端</span>
+                    <ul>
+                        <li v-for="item in backEnd"><a :href="item.url" :title="item.mark" target="
+                                                                    _blank">{{item.title}}</a></li>
+                    </ul>
+                </div>
+                <div class="finding">
+                    <span class="cate">发现</span>
+                    <ul>
+                        <li v-for="item in finding"><a :href="item.url" :title="item.mark"
+                                target="
+                                                                                                                                    _blank">{{item.title}}</a></li>
+                    </ul>
+                </div>
+                <div class="tools">
+                    <span class="cate">工具</span>
+                    <ul>
+                        <li v-for="item in tools"><a :href="item.url" :title="item.mark"
+                                target="
+                                                                                                    _blank">{{item.title}}</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div style="border-top:2px solid #000; margin-bottom: 6px;margin-top: 20px;"></div>
+            <div class="footer">
+                <p>专注于PC端，<a href="https://hyx.ink/navs" target="_blank">链接提交</a></p>
+                <p>by.<a href="https://hyx.ink" target="_blank">子涵</a> © 2023 </p>
+            </div>
+        </div>
+    </div>
+    <script src="./static/vue.min.js"></script>
+    <script src="./static/index.js"></script>
+</body>
+
+</html>
