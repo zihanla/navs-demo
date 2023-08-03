@@ -17,7 +17,17 @@ var vm = new Vue({
                 title: '低端影视',
                 url: 'https://ddys.site/',
                 mark: '国外资源多，无广告'
-            }
+            },
+            {
+                title: '滑稽影视',
+                url: 'http://v.yceo.cn/',
+                mark: '暂无广告，速度快'
+            },
+            {
+                title: '华乐影视',
+                url: 'https://www.huale.org/',
+                mark: '老牌影站'
+            },
 
         ],
         fontEnd: [
